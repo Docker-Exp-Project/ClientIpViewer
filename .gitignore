@@ -1,35 +1,34 @@
-!Build/
-.last_cover_stats
-/META.yml
-/META.json
-/MYMETA.*
-*.o
-*.pm.tdy
-*.bs
+# From .NET Core 3.0 you can use the command: `dotnet new gitignore` to generate a customizable .gitignore file
 
-# Devel::Cover
-cover_db/
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
 
-# Devel::NYTProf
-nytprof.out
+# Visual Studio Code
+.vscode
 
-# Dizt::Zilla
-/.build/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Module::Build
-_build/
-Build
-Build.bat
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
 
-# Module::Install
-inc/
-
-# ExtUtils::MakeMaker
-/blib/
-/_eumm/
-/*.gz
-/Makefile
-/Makefile.old
-/MANIFEST.bak
-/pm_to_blib
-/*.zip
+# Visual Studio 2015
+.vs/

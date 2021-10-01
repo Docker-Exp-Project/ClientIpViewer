@@ -28,7 +28,7 @@ namespace ClientIpViewer.Controllers
 
         public IActionResult Index()
         {
-            var ipAddress = Request.Headers["sec-fetch-user"].ToString();
+            var ipAddress = Request.Headers["X-Client-IP"].ToString();
             var accessor = GetRequestIP();
             ViewBag.IpAddress = ipAddress;
             ViewBag.HostIpAddress = GetUserIP();

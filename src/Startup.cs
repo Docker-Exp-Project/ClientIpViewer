@@ -51,7 +51,7 @@ namespace ClientIpViewer
                 app.UseHsts();
             }
             app.UseMyMiddleware();
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseStaticFiles();
             // app.UseForwardedHeaders(new ForwardedHeadersOptions
             // {
